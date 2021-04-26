@@ -4,6 +4,6 @@ import styles from "../../styles/Home.module.css"
 const CustomButton = ({ url, prefill, pageSettings, utm }) => {
   const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm });
 
-  return <button onClick={onClick}>Custom Button</button>;
+  return <button className={styles.buttone} onClick={onClick}>Schedule</button>;
 };
 export default CustomButton;

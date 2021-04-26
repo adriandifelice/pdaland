@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   font-size: 50px;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -11,7 +11,13 @@
   overflow-y: scroll;
   display: flex;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(248, 247, 247);
+  background-image:
+    radial-gradient(
+      circle at top left,
+      rgb(3, 3, 3),
+      #fdfdfd 1%
+    );
 }
 
 .primaryImg {
@@ -31,25 +37,45 @@
 .widget{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20vh;
+  box-shadow: 2px 2px 1px 0px rgba(14, 13, 13, 0.5);
+  border: solid 1px black;
+  height: 60%;
+  width: 65%;
+  border-radius: 5px;
+
 }
 
 .outerTest{
   width: 900px;
   height: 1090px;
 }
-
-.test{
+.buttone  {
+  color: white;
   display: flex;
   justify-content: center;
-  width: 10vw;
-  height: 5vh;
+  width: 30vw;
+  height: 8vh;
   background-color: rgb(70, 58, 238);
+  color:white;
   box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
-  border-radius: 10px;
+  border-radius: 100px;
   margin: 10px;
+  cursor:pointer;
+  align-items: center;
+  font-size: large;
 }
+
+.buttone:hover  {
+  color: black;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
+  border:solid 1px black;
+}
+
+
 
 .imageCard {
   height: 50vh;
