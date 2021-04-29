@@ -1,7 +1,7 @@
 .h1{
   display: flex;
-  justify-content: center;
-  font-size: 50px;
+  justify-content: flex-start;
+  font-size: 40px;
   color: rgb(0, 0, 0);
 }
 
@@ -11,27 +11,35 @@
   overflow-y: scroll;
   display: flex;
   align-items: center;
-  background-color: rgb(248, 247, 247);
-  background-image:
+  background-color: rgb(92, 157, 255);
+  /* background-image:
     radial-gradient(
       circle at top left,
       rgb(3, 3, 3),
       #fdfdfd 1%
-    );
+    ); */
+    justify-content: center;
 }
 
 .primaryImg {
-  height: 90vh;
-  position: fixed;
-  right:-5px;
-  max-width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: flex-end;
+  width: 50%;
+  position: relative;
 }
 
 .App {
   display: flex;
-  width: 50vw;
-  height: 100vh;
+  width: 75vw;
+  height: 70vh;
   justify-content: center;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 1px 0px rgba(14, 13, 13, 0.5); 
+
 }
 
 .widget{
@@ -39,19 +47,22 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20vh;
-  box-shadow: 2px 2px 1px 0px rgba(14, 13, 13, 0.5);
-  border: solid 1px black;
-  height: 60%;
-  width: 65%;
-  border-radius: 5px;
+  width: 50%;
+  margin:3%;
 
 }
+.imagen {
+  height:90vh;
+  opacity: 100%;
+  height: inherit;
+  max-width: 100%;
+}
+
 
 .outerTest{
   width: 900px;
   height: 1090px;
-}
+}  
 .buttone  {
   color: white;
   display: flex;
@@ -66,28 +77,27 @@
   cursor:pointer;
   align-items: center;
   font-size: large;
-}
+}  
 
 .buttone:hover  {
   color: black;
   background-color: rgb(253, 253, 253);
   box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
   border:solid 1px black;
-}
-
-
-
-.imageCard {
-  height: 50vh;
-  margin: 5px;
-  box-shadow: 1px black;
-}
-
-.imagen {
-  width: inherit;
-  opacity: 100%;
-  height: inherit;
-  border-radius: 2px;
+}  
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
