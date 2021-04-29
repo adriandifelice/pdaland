@@ -26,7 +26,6 @@ export default function Home() {
     setImage(images[current + 1].name)
     
 }
-  const newCurrent = current;
   return (
     <div className={styles.container}>
       <div className={styles.App}>

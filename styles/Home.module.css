@@ -11,14 +11,11 @@
   overflow-y: scroll;
   display: flex;
   align-items: center;
-  background-color: rgb(92, 157, 255);
-  /* background-image:
-    radial-gradient(
-      circle at top left,
-      rgb(3, 3, 3),
-      #fdfdfd 1%
-    ); */
+ 
     justify-content: center;
+    background-color: #a0a5aa;
+    background-image: -webkit-linear-gradient(115deg, #013A6B 35%, #f8e2de 35%);
+
 }
 
 .primaryImg {
@@ -33,12 +30,12 @@
 
 .App {
   display: flex;
-  width: 75vw;
+  width: 80vw;
   height: 70vh;
   justify-content: center;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 2px 2px 1px 0px rgba(14, 13, 13, 0.5); 
+  box-shadow: 1px 1px 1px 0px rgba(14, 13, 13, 0.5); 
 
 }
 
@@ -56,6 +53,8 @@
   opacity: 100%;
   height: inherit;
   max-width: 100%;
+  border-radius: 5px;
+
 }
 
 
@@ -69,7 +68,7 @@
   justify-content: center;
   width: 30vw;
   height: 8vh;
-  background-color: rgb(70, 58, 238);
+  background-color:#013A6B;
   color:white;
   box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
   border-radius: 100px;
@@ -84,27 +83,57 @@
   background-color: rgb(253, 253, 253);
   box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
   border:solid 1px black;
-}  
+} 
+.buttone:focus{
+  outline:none;
+} 
 .arrow {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
+}
+.arrow:hover{
+  background-color: rgb(223, 219, 219);
+}
+.arrow:focus{
+outline: none;
 }
 
+@media (max-width:600px) {
+  .App{
+   flex-direction: column;
+   width:100vw;
+   height: 100vh;
+   justify-content: center;
+ }
 
+ .widget{
+   width: 100%;
+ }
+ .primaryImg{
+   width: 100%;
+ }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+}
+
+@media (min-width: 600px) and (max-width:800px) {
+  .App{
+   width:100vw;
+   height: 60vh;
+ }
+}
+
+@media (min-width: 800px) and (max-width:1100px) {
+  .App{
+    width: 95vw;
   }
 }
