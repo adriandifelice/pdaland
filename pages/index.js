@@ -15,16 +15,20 @@ export default function Home() {
   const [current, setCurrent] = useState(0)
   const [image, setImage] = useState(images[0].name);
   
+     setTimeout(handleClick, 3000);
+  
 
   function handleClick () {
     if (current === images.length - 1) {
+      console.log('final')
       setCurrent(0);
       setImage(images[0].name);
       return;
-    }
-    setCurrent(current + 1);
-    setImage(images[current + 1].name)
-    
+    } else { 
+      console.log(current)
+      setCurrent(current + 1);
+      setImage(images[current + 1].name)}
+   
 }
   return (
     <div className={styles.container}>
@@ -38,7 +42,6 @@ export default function Home() {
         </div>
       <div className={styles.primaryImg}>
         <img className={styles.imagen} src={image} alt="First slide" />
-        <button className={styles.arrow} onClick={()=> handleClick()}> + </button>
       </div>
       </div>
     </div>
