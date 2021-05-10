@@ -167,7 +167,7 @@ outline: none;
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
-    overflow-y:hidden;
+    
   }
   .App{
    flex-direction: column;
@@ -188,7 +188,6 @@ outline: none;
    min-height: 51%;
    margin-left: auto;
    margin-right: auto;
-   margin-top: -40px;
  }
  .imagen {
   max-width:100%;
@@ -208,6 +207,8 @@ outline: none;
 .infoDiv{
   width: 90vw;
   margin-left: 3%;
+  height: 40vh;
+  overflow-y: scroll;
 }
 .buttone{
   margin-left: auto;
