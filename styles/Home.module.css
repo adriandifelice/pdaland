@@ -14,7 +14,7 @@
  
     justify-content: center;
     background-color: #a0a5aa;
-    background-image: -webkit-linear-gradient(115deg, #013A6B 35%, #f8e2de 35%);
+    background-image: -webkit-linear-gradient(107deg, #0250b8 35%, #f5f4f4 35%);
 
 }
 
@@ -35,7 +35,7 @@
   justify-content: center;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 1px 1px 1px 0px rgba(14, 13, 13, 0.5); 
+  box-shadow: 1px 3px 1px 0px rgba(14, 13, 13, 0.5); 
 
 }
 
@@ -55,6 +55,22 @@
   height: auto;
 }
 
+.logo{
+  height: 40px;
+  margin: 20px;
+  border-radius: 3px;
+}
+
+.infoDiv{
+  height: 40vh;
+  width: 31vw;
+}
+.logoComponent{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
 
 .outerTest{
   width: 900px;
@@ -64,13 +80,13 @@
   color: white;
   display: flex;
   justify-content: center;
-  width: 30vw;
-  height: 8vh;
-  background-color:#013A6B;
+  width: 90%;
+  height: 6vh;
+  background-color:#0250b8;
   color:white;
   box-shadow: 2px 2px 1px 0px rgba(253, 253, 253, 0.5);
-  border-radius: 100px;
-  margin: 10px;
+  border-radius: 10px;
+  margin: 5px;
   cursor:pointer;
   align-items: center;
   font-size: large;
@@ -106,22 +122,100 @@
 outline: none;
 }
 
+.leftCard{
+  display: flex;
+  flex-direction:column;
+}
+
+.buttonGroup{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px grey;
+  width: 90%;
+}
+.buttonGroupDiv{
+  width: inherit;
+}
+.buttonGroupItem {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonGroupItem:hover{
+  background-color: rgb(238, 238, 241);
+}
+.buttonGroupItem:focus{
+  background-color: rgb(240, 240, 243);
+  outline: none;
+}
+.logoComponent{
+  position: fixed;
+  bottom: 0;
+  left:0;
+}
+
+.p{
+  margin:2px;
+}
+
 @media (max-width:600px) {
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    overflow-y:hidden;
+  }
   .App{
    flex-direction: column;
    width:100vw;
    height: 100vh;
    justify-content: center;
  }
-
  .widget{
    width: 100%;
+   margin: 0px;
  }
  .primaryImg{
-   width: 100%;
-   height: auto;
+   width: 95vw;
+   margin-bottom: 10vh;
+   display: flex;
+   justify-content: center;
+   max-height: 51%;
+   min-height: 51%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -40px;
  }
-
+ .imagen {
+  max-width:100%;
+  max-height:75%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.logoComponent{
+  margin-bottom: 0vh;
+}
+.buttonGroup{
+  position: sticky;
+  top: 0;
+  width: 100vw;
+}
+.infoDiv{
+  width: 90vw;
+  margin-left: 3%;
+}
+.buttone{
+  margin-left: auto;
+  margin-right: auto;
+}
+.contentDiv{
+  margin-top: 8vh;
+}
 }
 
 @media (min-width: 600px) and (max-width:800px) {
@@ -129,6 +223,11 @@ outline: none;
    width:100vw;
    height: 60vh;
  }
+
+ .infoDiv{
+  height: 40vh;
+  width: 48vw;
+}
 }
 
 @media (min-width: 800px) and (max-width:1100px) {
