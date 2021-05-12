@@ -27,7 +27,7 @@ const CardComponent = () => {
                        <li><b>Sourdough Breads</b> - Classic, Seeded.</li>
                        <li><b>Specialty Breads</b> - Anadama, Oat Porridge, Cranberry Pecan, Olive loaf.</li>
                        <li><b>Classic Breads</b> - Ciabatta, Francese, Baguette, Rolls, </li>
-                       <li><b>Viennoisserie and Pastries</b> - Croissants, </li>
+                       <li><b>Viennoisserie and Pastries</b> - Croissants, Pain au Chocolate and many more. </li>
                      </ul>
                      <p><i>Delivery 365 days of the year.</i><br></br><i>Different shapes and slicing options available.</i></p>
                   </div>
