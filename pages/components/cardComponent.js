@@ -7,21 +7,22 @@ const CardComponent = () => {
   const url = "https://calendly.com/adrian-di-felice";
 
   const clients =   <div className={styles.contentDiv}>
-                        <h4>Pain d'Avignon is a proud partner of some of the highest quality food establishments in NY including:</h4>
+                        <h4>We are proud partners of some of the highest quality food establishments in NY including:</h4>
                         <ul>
-                          <li><p className={styles.p}><b>Restaurants</b> - Serving to over 10 Michelin Stars *</p></li>
-                          <li><p className={styles.p}><b>Hotels</b> - Partnering with some of the best hotels in the city</p></li>
-                          <li><p className={styles.p}><b>Grocery & Specialty Stores</b> - High end grocery and specialty stores</p></li>
+                          <li><p className={styles.p}><b>Restaurants & Cafés</b> - Serving to some of the best chefs and food establisments, totaling over 10 Michelin Stars.</p></li>
+                          <li><p className={styles.p}><b>Hotels</b> - Partnering with some of the best hotels in NYC, from 5 stars to boutique hotels.</p></li>
+                          <li><p className={styles.p}><b>Grocery & Specialty Stores</b> - High end grocery and specialty stores.</p></li>
                         </ul>
                     </div>
 
   const about = <div className={styles.contentDiv}>
-                    <p>Pain d’Avignon, is an award winning bakery that has been supplying Michelin-starred restaurants and top hotels for more than 25 years.</p>
+                    <h4>Pain d’Avignon has been supplying Michelin-starred restaurants, top hotels and specialty stores for more than 25 years.</h4>
+                    <p>We let the ingredients speak for themselves while prioritizing local and organic whenever we can. This is our business philosophy.</p>
                 </div>
 
   const product = <div className={styles.contentDiv}>
                      <p>We bake, serve and eat everything fresh on the same day.</p>
-                     <p>Some of the breads we make include the following</p>
+                     <p>Some of our best selleres are:</p>
                      <ul>
                        <li><b>Sourdough Breads</b> - Classic, Seeded.</li>
                        <li><b>Specialty Breads</b> - Anadama, Oat Porridge, Cranberry Pecan, Olive loaf.</li>
